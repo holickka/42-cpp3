@@ -6,7 +6,7 @@
 /*   By: hsim <hsim@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 15:26:30 by hsim              #+#    #+#             */
-/*   Updated: 2025/08/26 17:57:44 by hsim             ###   ########.fr       */
+/*   Updated: 2025/08/26 21:39:08 by hsim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class	ClapTrap
 		int			energy_point;
 		int			attack_damage;
 	public:
+		ClapTrap(void);
 		ClapTrap(const std::string name);
 		~ClapTrap(void);
 		ClapTrap(const ClapTrap &old_obj);

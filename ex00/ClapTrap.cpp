@@ -6,7 +6,7 @@
 /*   By: hsim <hsim@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 15:26:53 by hsim              #+#    #+#             */
-/*   Updated: 2025/08/26 21:33:46 by hsim             ###   ########.fr       */
+/*   Updated: 2025/08/26 21:39:55 by hsim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,16 @@
 
 ClapTrap::ClapTrap(std::string name)
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "Default constructor with name called" << std::endl;
 	this->name = name;
 	this->hit_point = 10;
 	this->energy_point = 10;
 	this->attack_damage = 0;
+}
+
+ClapTrap::ClapTrap(void)
+{
+	std::cout << "Default constructor called" << std::endl;
 }
 
 ClapTrap::~ClapTrap(void)
