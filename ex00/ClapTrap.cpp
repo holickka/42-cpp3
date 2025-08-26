@@ -6,7 +6,7 @@
 /*   By: hsim <hsim@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 15:26:53 by hsim              #+#    #+#             */
-/*   Updated: 2025/08/26 18:02:51 by hsim             ###   ########.fr       */
+/*   Updated: 2025/08/26 21:33:46 by hsim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &old_obj)
 	std::cout << "Copy assigment operator called" << std::endl;
 	if (this == &old_obj)
 		return (*this);
+	this->name = old_obj.name;
 	this->attack_damage = old_obj.attack_damage;
 	this->hit_point = old_obj.hit_point;
 	this->energy_point = old_obj.energy_point;

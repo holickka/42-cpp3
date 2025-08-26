@@ -6,7 +6,7 @@
 /*   By: hsim <hsim@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/26 18:28:06 by hsim              #+#    #+#             */
-/*   Updated: 2025/08/26 21:28:10 by hsim             ###   ########.fr       */
+/*   Updated: 2025/08/26 21:34:36 by hsim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ ScavTrap::ScavTrap(const ScavTrap &old_obj)
 ScavTrap&	ScavTrap::operator=(const ScavTrap& old_obj)
 {
 	std::cout << "[ScavTrap] Copy assignment operator called" << std::endl;
+	if (this == &old_obj)
+		return (*this);
 	this->name = old_obj.name;
 	this->hit_point = old_obj.hit_point;
 	this->energy_point = old_obj.energy_point;
